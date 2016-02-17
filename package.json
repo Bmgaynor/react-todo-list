@@ -4,7 +4,7 @@
   "description": "A simple todo list app built with React, Redux and Webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon server/server.js --ignore components"
+    "serve": "nodemon server/server.js --ignore components --ignore redux"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,17 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.1.0",
     "express": "^4.13.4",
+    "jquery": "^2.2.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
+    "redux": "^3.3.1",
+    "redux-thunk": "^1.0.3",
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.6.4"
+  },
+  "devDependencies": {
+    "redux-logger": "^2.5.2"
   }
 }
